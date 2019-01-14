@@ -36,6 +36,5 @@ int main() {
  
 
     return 0;
-    //return result.wasSuccessful() ? 0 : 1; 
 
 }

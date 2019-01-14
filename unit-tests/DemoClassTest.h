@@ -9,14 +9,16 @@
 #include <stdexcept>
 #include "democlass.h"
 
+
 class DemoClassTest : public CppUnit::TestFixture { 
 
     CPPUNIT_TEST_SUITE( DemoClassTest );
 
     CPPUNIT_TEST( testCaseOne );
     CPPUNIT_TEST( testCaseTwo );
-    CPPUNIT_TEST_EXCEPTION( argumentTest, std::illegal_argument );
-  
+    CPPUNIT_TEST (argumentTest );
+
+
     CPPUNIT_TEST_SUITE_END();
 
     DemoClass dc;
