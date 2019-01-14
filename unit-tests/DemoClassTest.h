@@ -32,7 +32,7 @@ class DemoClassTest : public CppUnit::TestFixture {
 
     CPPUNIT_TEST_SUITE_END();
 
-    DemoClass dc;
+    DemoClass * dc;
 
 public: 
 

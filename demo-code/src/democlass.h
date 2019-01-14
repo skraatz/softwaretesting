@@ -23,6 +23,9 @@ class DemoClass {
  public:
     /**
      * takes arguments between -10 and +10 and normalizes them to values between -1 and 1
+     * @param input: an integer number between -10 and +10
+     * @return: a normalized number between -1 and 1
+     * @throws: std::out_of_range
      **/
     double convert(int input); 
 };

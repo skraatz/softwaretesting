@@ -18,23 +18,23 @@
 #include "DemoClassTest.h"
 
 void DemoClassTest::setUp() {
-
+    this->dc = new DemoClass();
 }
 
 void DemoClassTest::tearDown() {
-
+    delete(this->dc);
 }
 
 void DemoClassTest::testCaseOne() {
-    double testnumber = dc.convert(-4);
+    double testnumber = dc->convert(-4);
     CPPUNIT_ASSERT( testnumber == -0.4 );
 }
 void DemoClassTest::testCaseTwo() {
-    CPPUNIT_ASSERT( dc.convert( -1) == -0.1 );
+    CPPUNIT_ASSERT( dc->convert( -1) == -0.1 );
 }
 
 void DemoClassTest::argumentTest() {
-    CPPUNIT_ASSERT_THROW ( dc.convert(-100), std::out_of_range); 
+    CPPUNIT_ASSERT_THROW ( dc->convert(-100), std::out_of_range); 
 }
 
 CPPUNIT_TEST_SUITE_REGISTRATION( DemoClassTest );
