@@ -16,12 +16,7 @@
 */
 
 #include "./democlass.h"
-#include <iostream>
 
-double DemoClass::convert(int input) throw (std::out_of_range){
-    if (-10 <= input && input <= 10) {
-        return ((double)input)/10;
-    } else {
-        throw std::out_of_range( "received input out of range" );
-    }
+double DemoClass::convert(int input) {
+    return 0;
 }

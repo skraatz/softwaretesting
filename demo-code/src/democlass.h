@@ -24,7 +24,7 @@ class DemoClass {
     /**
      * takes arguments between -10 and +10 and normalizes them to values between -1 and 1
      **/
-    double convert(int input) throw (std::out_of_range); 
+    double convert(int input); 
 };
 
 #endif  // H_DEMOCLASS
